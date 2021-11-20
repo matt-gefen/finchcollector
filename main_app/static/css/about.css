@@ -1,0 +1,8 @@
+img {
+  height: 100px;
+}
+
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+}

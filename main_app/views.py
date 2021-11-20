@@ -13,7 +13,7 @@ finches = [
 ] 
 
 def home(request):
-  return HttpResponse('finch finch finch')
+  return render(request, 'home.html')
 def about(request):
   return render(request, 'about.html')
 def finches_index(request):
