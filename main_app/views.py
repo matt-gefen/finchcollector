@@ -9,7 +9,7 @@ class Finch:  # Note that parens are optional if not inheriting from another cla
     self.description = description
 
 finches = [
-  Finch('Dorkus', 'House Finch', 'A wee little scamp')
+  Finch('Dorkus', 'House Finch', 'wee little scamp')
 ] 
 
 def home(request):
@@ -17,4 +17,4 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 def finches_index(request):
-  return render(request, 'finches/index.html', {finches: finches})
+  return render(request, 'finches/index.html', {'finches': finches})
