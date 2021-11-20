@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/finch-detail.css' %}"
+/>
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/header-fix.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="finch-container">
+  <div class="finch-img">
+    <img 
+      src="{% static 'images/icon-finch-small.svg' %}" 
+      alt="Icon of Finch">
+  </div>
+  <div class="finch-details">
+    <h1>{{ finch.name }}</h1>
+    <p>{{ finch.description }}</p>
+  </div>
+</section>
+
+{% endblock %}
